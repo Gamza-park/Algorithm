@@ -46,6 +46,12 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "__functional_base": "cpp",
+        "__functional_base_03": "cpp",
+        "__hash_table": "cpp",
+        "__tuple": "cpp",
+        "chrono": "cpp",
+        "ratio": "cpp"
     }
 }

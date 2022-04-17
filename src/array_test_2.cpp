@@ -7,7 +7,7 @@ auto build_array(Args&&... args) -> std::array<typename std::common_type<Args...
 {
 	using commonType = typename std::common_type<Args...>::type;
 	return {std::forward<commonType>((Args&&)args)...};
-}
+};
 
 int main()
 {
