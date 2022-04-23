@@ -81,6 +81,7 @@
         "set": "cpp",
         "unordered_set": "cpp",
         "stop_token": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "list": "cpp"
     }
 }
