@@ -2,7 +2,7 @@
 
 ## This repository is an algorithm study repository.
 
-## history
+## Clear History
 ### [LeetCode](https://leetcode.com/)
  - All    : 87
  - Easy   : 58
