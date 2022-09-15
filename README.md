@@ -6,8 +6,8 @@
 ### [LeetCode](https://leetcode.com/)
 
 |Session|Cleae|
-|------|---|
+|------|--|
 |Easy|58|
-|Mideum|29|
+|Mideum|30|
 |Hard|0|
-|All|87|
+|All|88|
