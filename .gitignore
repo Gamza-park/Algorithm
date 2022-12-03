@@ -42,3 +42,8 @@
 *.tlog
 *.idb
 *.lastbuildstate
+
+
+
+# C++
+c++/build
