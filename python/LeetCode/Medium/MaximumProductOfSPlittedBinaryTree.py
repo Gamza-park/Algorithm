@@ -16,26 +16,38 @@
 #         self.right = right
 class Solution:
     def maxProduct(self, root: Optional[TreeNode]) -> int:
+        global maxValue
+        maxValue = 0
 
-        def dfs(node):
-            if not node: return 1
-            nodenum = next(numgen)
-            return max(cache[nodenum] * (cache[0] - cache[nodenum]), dfs(node.left), dfs(node.right))
+        def dfs(node, sum):
+            sum += node.val
 
-        def natural_nums():
-            num = 0
-            while True:
-                yield num
-                num += 1
+            if node.left:
+                sum = dfs(node.left, sum)
 
-        def dfs_sum(node):
-            if not node: return 0
-            nodenum = next(numgen)
-            cache[nodenum] = node.val + dfs_sum(node.left) + dfs_sum(node.right)
-            return cache[nodenum]
+            if node.right:
+                sum = dfs(node.right, sum)
 
-        cache = defaultdict(int)
-        numgen = natural_nums()
-        dfs_sum(root)
-        numgen = natural_nums()
-        return dfs(root) % (10 ** 9 + 7)
+            return sum
+
+        totalSum = dfs(root, 0)
+
+        def second_dfs(node):
+            global maxValue
+
+            curValue = node.val
+            if node.left:
+                curValue += second_dfs(node.left)
+            if node.right:
+                curValue += second_dfs(node.right)
+
+            minusVal = totalSum - curValue
+            if maxValue < curValue * minusVal:
+                maxValue = curValue * minusVal
+            return curValue
+
+        second_dfs(root)
+
+        maxValue %= 10 ** 9 + 7
+
+        return maxValue
