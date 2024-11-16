@@ -7,7 +7,7 @@
 
 |Session|Cleae|
 |------|--|
-|Easy|69|
-|Mideum|47|
+|Easy|70|
+|Mideum|51|
 |Hard|0|
 |All|107|
