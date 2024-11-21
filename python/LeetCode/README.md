@@ -8,6 +8,6 @@
 |Session|Cleae|
 |------|--|
 |Easy|78|
-|Mideum|59|
+|Mideum|62|
 |Hard|2|
-|All|139|
+|All|142|
